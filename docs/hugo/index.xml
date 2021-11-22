@@ -2,58 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on My New Hugo Site</title>
-    <link>https://Yrureta.github.io/myHugoSite/hugo/</link>
+    <link>https://Yrureta/myHugoSite/hugo/</link>
     <description>Recent content in Hugo on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://Yrureta.github.io/myHugoSite/hugo/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Shortcode</title>
-      <link>https://Yrureta.github.io/myHugoSite/hugo/ejercicio4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://Yrureta.github.io/myHugoSite/hugo/ejercicio4/</guid>
-      <description>Ejercicio 4 Shortcode </description>
-    </item>
-    <item>
-      <title>Personalizar la plantilla</title>
-      <link>https://Yrureta.github.io/myHugoSite/hugo/ejercicio5/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://Yrureta.github.io/myHugoSite/hugo/ejercicio5/</guid>
-      <description>Ejercicio 5 Personalizar la plantilla </description>
-    </item>
-    <item>
-      <title>Multilenguaje</title>
-      <link>https://Yrureta.github.io/myHugoSite/hugo/ejercicio6/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://Yrureta.github.io/myHugoSite/hugo/ejercicio6/</guid>
-      <description>Ejercicio 6 Multilenguaje </description>
-    </item>
-    <item>
-      <title>Plantillas</title>
-      <link>https://Yrureta.github.io/myHugoSite/hugo/ejercicio7/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://Yrureta.github.io/myHugoSite/hugo/ejercicio7/</guid>
-      <description>Ejercicio 7 Plantillas </description>
-    </item>
-    <item>
-      <title>Datos externos</title>
-      <link>https://Yrureta.github.io/myHugoSite/hugo/ejercicio8/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://Yrureta.github.io/myHugoSite/hugo/ejercicio8/</guid>
-      <description>Ejercicio 8 Datos externos </description>
-    </item>
+    <language>en-us</language><atom:link href="https://Yrureta/myHugoSite/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Instalación</title>
-      <link>https://Yrureta.github.io/myHugoSite/hugo/ejercicio1/instalacion/</link>
+      <link>https://Yrureta/myHugoSite/hugo/ejercicio1/instalacion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://Yrureta.github.io/myHugoSite/hugo/ejercicio1/instalacion/</guid>
+      <guid>https://Yrureta/myHugoSite/hugo/ejercicio1/instalacion/</guid>
       <description>Ejercicio 1 Instalación  1. Crea un sitio nuevo con el nombre que quieras. Para crear un nuevo sitio con Hugo escribimos en la consola:
 hugo new site myHugoSite   2. Entra en el directorio creado y observa las diferentes carpetas que tienes.  </description>
     </item>
     <item>
       <title>Themes o layout base</title>
-      <link>https://Yrureta.github.io/myHugoSite/hugo/ejercicio2/themes/</link>
+      <link>https://Yrureta/myHugoSite/hugo/ejercicio2/themes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://Yrureta.github.io/myHugoSite/hugo/ejercicio2/themes/</guid>
+      <guid>https://Yrureta/myHugoSite/hugo/ejercicio2/themes/</guid>
       <description>Ejercicio 2 Themes o layout base  1. Instala el tema relearn. Para instalar el tema en Hugo escribimos en la consola:
 git init git submodule add https://github.com/McShelby/hugo-theme-relearn.git ./themes/relearn  Una vez instalado tenemos que escribir en el archivo de configuración config.toml:
 theme =[&#39;relearn&#39;]   2. Ejecuta el comando de hugo para abrir un puerto en local. Para abrir un puerto en local escribimos en la consola:
@@ -61,13 +26,49 @@ hugo server &amp;amp;   3.</description>
     </item>
     <item>
       <title>Contenido</title>
-      <link>https://Yrureta.github.io/myHugoSite/hugo/ejercicio3/contenido/</link>
+      <link>https://Yrureta/myHugoSite/hugo/ejercicio3/contenido/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://Yrureta.github.io/myHugoSite/hugo/ejercicio3/contenido/</guid>
-      <description>Ejercicio 3 Contenido  1. Instala el tema relearn. Para instalar el tema en Hugo escribimos en la consola:
-git init git submodule add https://github.com/McShelby/hugo-theme-relearn.git ./themes/relearn  Una vez instalado tenemos que escribir en el archivo de configuración config.toml:
-theme =[&#39;relearn&#39;]   2. Ejecuta el comando de hugo para abrir un puerto en local. Para abrir un puerto en local escribimos en la consola:
-hugo server &amp;amp;   3.</description>
+      <guid>https://Yrureta/myHugoSite/hugo/ejercicio3/contenido/</guid>
+      <description>Ejercicio 3 Contenido  1. Crea la estructura de tu sitio web.  2. Completa los ficheros con contenido. Para crear las secciones y ficheros _index.md utilizamos por ejemplo:
+hugo new --kind chapter Hugo/_index.md hugo new --kind chapter Hugo/Ejercicio1/instalacion.md  Seguídamente utilizamos markdown para añadir el contenido:
+###### 1. Crea un sitio nuevo con el nombre que quieras. Para crear un nuevo sitio con Hugo escribimos en la consola: hugo new site myHugoSite --- ###### 2.</description>
+    </item>
+    <item>
+      <title>Shortcode</title>
+      <link>https://Yrureta/myHugoSite/hugo/ejercicio4/shortcode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Yrureta/myHugoSite/hugo/ejercicio4/shortcode/</guid>
+      <description>Ejercicio 4 Shortcode  Accede a la información de de shortcode de la plantilla de relearn e incluye en tu trabajo los elementos que a continuación se muestran.
+1. Botones.  Audacity   Audacity  Audacity    2. Páginas de descargas. Imágenes relacionadas dwes-001.png (14 KB) dwes-002.png (36 KB) dwes-003.png (131 KB) dwes-004.png (41 KB)    3. Acortar un texto con leer mas….   Haz click aquí!</description>
+    </item>
+    <item>
+      <title>Personalizar la plantilla</title>
+      <link>https://Yrureta/myHugoSite/hugo/ejercicio5/personalizar_plantilla/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Yrureta/myHugoSite/hugo/ejercicio5/personalizar_plantilla/</guid>
+      <description>Ejercicio 5 Personalizar la plantilla Modifica la plantilla según se ha visto en este tema.
+1. Cambia el logo.  2. Establece otros colores según consideres.  3. Añade un menú principal que tenga 4 opciones al menos.  4. Establece icono de fan awesome.  5. Establece un título para ese menú.  6. Modifica el footer de la página..  </description>
+    </item>
+    <item>
+      <title>Multilenguaje</title>
+      <link>https://Yrureta/myHugoSite/hugo/ejercicio6/multilenguaje/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Yrureta/myHugoSite/hugo/ejercicio6/multilenguaje/</guid>
+      <description>Ejercicio 6 Multilenguaje </description>
+    </item>
+    <item>
+      <title>Plantillas</title>
+      <link>https://Yrureta/myHugoSite/hugo/ejercicio7/plantillas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Yrureta/myHugoSite/hugo/ejercicio7/plantillas/</guid>
+      <description>Ejercicio 7 Plantillas </description>
+    </item>
+    <item>
+      <title>Datos externos</title>
+      <link>https://Yrureta/myHugoSite/hugo/ejercicio8/datos_externos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Yrureta/myHugoSite/hugo/ejercicio8/datos_externos/</guid>
+      <description>Ejercicio 8 Datos externos </description>
     </item>
   </channel>
 </rss>

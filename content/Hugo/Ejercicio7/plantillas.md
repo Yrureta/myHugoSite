@@ -1,5 +1,4 @@
 +++
-chapter = true
 pre = "<b>7. </b>"
 title = "Plantillas"
 weight = 7
