@@ -1,4 +1,4 @@
-baseURL = "https://Yrureta/github.io/myHugoSite"
+baseURL = "https://Yrureta.github.io/myHugoSite"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme =['relearn']
