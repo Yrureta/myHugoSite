@@ -33,6 +33,6 @@ Nos abre el puerto **35171**.
 
 Mediante el navegador accedemos a la dirección **http://localhost:1313/myHugoSite/**.
 
-![image2](https://i.ibb.co/Z6sKwDX/DWEC-002.png)
+![image2](https://i.ibb.co/Z6sKwDX/DWEC-002.png?classes=border)
 
 ---

@@ -70,7 +70,10 @@ hugo new --kind chapter Hugo/_index.md hugo new --kind chapter Hugo/Ejercicio1/i
       <link>https://Yrureta/myHugoSite/hugo/ejercicio8/datos_externos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://Yrureta/myHugoSite/hugo/ejercicio8/datos_externos/</guid>
-      <description>Ejercicio 8 Datos externos </description>
+      <description>Ejercicio 8 Datos externos Ubicamos el fichero tv.json en la carpeta data. El fichero lo obtenemos de https://github.com/MAlejandroR/staticSite/blob/main/data/tv.json.
+Creamos una plantilla html datos_tv.html y la ubicamos en themes/relearn/layouts/_default.
+Código de la plantilla:
+&amp;lt;ul&amp;gt; {{ range .Site.Data.tv }} &amp;lt;h1&amp;gt;&amp;lt;li&amp;gt; {{ .name }}&amp;lt;/li&amp;gt;&amp;lt;/h1&amp;gt; {{ range .channels }} &amp;lt;a href=&amp;quot;{{ .web}}&amp;quot; &amp;gt; &amp;lt;img src=&amp;quot;{{.logo}}&amp;quot; alt=&amp;quot;{{ .name }}&amp;quot;&amp;gt; &amp;lt;/a&amp;gt; {{ end }} {{ end }} &amp;lt;/ul&amp;gt;  Una vez que creada la plantilla, vamos a consumirla desde un fichero de markdown.</description>
     </item>
   </channel>
 </rss>

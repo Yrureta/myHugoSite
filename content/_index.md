@@ -1,6 +1,6 @@
 +++
 chapter = false
-title = "DWEC - Práctica 1"
+title = "DWES - Práctica 1"
 weight = 3
 +++
 
