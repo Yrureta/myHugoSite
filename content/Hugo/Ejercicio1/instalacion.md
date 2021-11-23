@@ -12,8 +12,9 @@ weight = 1
 
 Para crear un nuevo sitio con Hugo escribimos en la consola:
 
-    hugo new site myHugoSite
-
+```shell
+hugo new site myHugoSite
+```
 ---
 ###### 2. Entra en el directorio creado y observa las diferentes carpetas que tienes.
 

@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://Yrureta/myHugoSite/hugo/ejercicio1/instalacion/</guid>
       <description>Ejercicio 1 Instalación  1. Crea un sitio nuevo con el nombre que quieras. Para crear un nuevo sitio con Hugo escribimos en la consola:
-hugo new site myHugoSite   2. Entra en el directorio creado y observa las diferentes carpetas que tienes.  </description>
+hugo new site myHugoSite  2. Entra en el directorio creado y observa las diferentes carpetas que tienes.  </description>
     </item>
     <item>
       <title>Themes o layout base</title>
@@ -21,8 +21,7 @@ hugo new site myHugoSite   2. Entra en el directorio creado y observa las difere
       <guid>https://Yrureta/myHugoSite/hugo/ejercicio2/themes/</guid>
       <description>Ejercicio 2 Themes o layout base  1. Instala el tema relearn. Para instalar el tema en Hugo escribimos en la consola:
 git init git submodule add https://github.com/McShelby/hugo-theme-relearn.git ./themes/relearn  Una vez instalado tenemos que añadir en el archivo de configuración config.toml:
-theme =[&#39;relearn&#39;]   2. Ejecuta el comando de hugo para abrir un puerto en local. Para abrir un puerto en local escribimos en la consola:
-hugo server &amp;amp;  Nos abre el puerto 35171.</description>
+theme =[&#39;relearn&#39;]   2. Ejecuta el comando de hugo para abrir un puerto en local. Para abrir un puerto en local escribimos en la consola: ´´´ hugo server &amp;amp; ´´´ Nos abre el puerto 35171.</description>
     </item>
     <item>
       <title>Contenido</title>
@@ -31,7 +30,7 @@ hugo server &amp;amp;  Nos abre el puerto 35171.</description>
       <guid>https://Yrureta/myHugoSite/hugo/ejercicio3/contenido/</guid>
       <description>Ejercicio 3 Contenido  1. Crea la estructura de tu sitio web.  2. Completa los ficheros con contenido. Para crear las secciones y ficheros _index.md utilizamos por ejemplo:
 hugo new --kind chapter Hugo/_index.md hugo new --kind chapter Hugo/Ejercicio1/instalacion.md  Seguidamente utilizamos markdown para añadir el contenido:
-###### 1. Crea un sitio nuevo con el nombre que quieras. Para crear un nuevo sitio con Hugo escribimos en la consola: hugo new site myHugoSite --- ###### 2.</description>
+###### 1. Crea un sitio nuevo con el nombre que quieras.  Para crear un nuevo sitio con Hugo escribimos en la consola: hugo new site myHugoSite --- ###### 2.</description>
     </item>
     <item>
       <title>Shortcode</title>
@@ -48,7 +47,7 @@ hugo new --kind chapter Hugo/_index.md hugo new --kind chapter Hugo/Ejercicio1/i
       <guid>https://Yrureta/myHugoSite/hugo/ejercicio5/personalizar_plantilla/</guid>
       <description>Ejercicio 5 Personalizar la plantilla Modifica la plantilla según se ha visto en este tema.
 1. Cambia el logo. Para cambiar el logo u otras características de la plantilla modificamos el contenido del archivo correspendiente de la carpeta layouts/partials de nuestra plantilla. En este caso modificamos logo.html.
-&amp;lt;a id=&amp;quot;logo&amp;quot; href=&amp;quot;{{ .Site.Params.landingPageURL | default &amp;quot;/&amp;quot; | relLangURL }}&amp;quot; style=&amp;quot; color: #3d414d; font-family: &#39;Novacento Sans Wide&#39;, &#39;Helvetica&#39;, &#39;Tahoma&#39;, &#39;Geneva&#39;, &#39;Arial&#39;, sans-serif; font-size: 30px; font-weight: bold; margin-top: -2px; &amp;quot;&amp;gt; &amp;lt;img src=&amp;quot;https://i.</description>
+&amp;lt;a id=&amp;#34;logo&amp;#34; href=&amp;#34;{{ .Site.Params.landingPageURL | default &amp;#34;/&amp;#34; | relLangURL }}&amp;#34; style=&amp;#34; color: #3d414d; font-family: &amp;#39;Novacento Sans Wide&amp;#39;, &amp;#39;Helvetica&amp;#39;, &amp;#39;Tahoma&amp;#39;, &amp;#39;Geneva&amp;#39;, &amp;#39;Arial&amp;#39;, sans-serif; font-size: 30px; font-weight: bold; margin-top: -2px;&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;https://i.</description>
     </item>
     <item>
       <title>Multilenguaje</title>
@@ -62,8 +61,10 @@ hugo new --kind chapter Hugo/_index.md hugo new --kind chapter Hugo/Ejercicio1/i
       <link>https://Yrureta/myHugoSite/hugo/ejercicio7/plantillas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://Yrureta/myHugoSite/hugo/ejercicio7/plantillas/</guid>
-      <description>Ejercicio 7 Plantillas 1. Prueba a crear una plantilla personal y muéstrala. Nota: Pendiente de hacer.
- </description>
+      <description>Ejercicio 7 Plantillas 1. Prueba a crear una plantilla personal y muéstrala. Vamos a realizar una plantilla que coloca un footer fijo al final de la página.
+Creamos un fichero html que llamaremos footer_fijo.html y lo almacenamos en la carpeta layouts/_default/.
+Escribimos el código siguiente:
+{{- partial &amp;#34;header.html&amp;#34; . }} {{ partial &amp;#34;content.html&amp;#34; . }} &amp;lt;footer class=&amp;#34;footline&amp;#34;&amp;gt; {{- with .Params.LastModifierDisplayName }} &amp;lt;i class=&amp;#39;fas fa-user&amp;#39;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;a href=&amp;#34;mailto:{{ $.Params.LastModifierEmail }}&amp;#34;&amp;gt;{{ . }}&amp;lt;/a&amp;gt; {{ with $.</description>
     </item>
     <item>
       <title>Datos externos</title>
@@ -73,7 +74,7 @@ hugo new --kind chapter Hugo/_index.md hugo new --kind chapter Hugo/Ejercicio1/i
       <description>Ejercicio 8 Datos externos Ubicamos el fichero tv.json en la carpeta data. El fichero lo obtenemos de https://github.com/MAlejandroR/staticSite/blob/main/data/tv.json.
 Creamos una plantilla html datos_tv.html y la ubicamos en themes/relearn/layouts/_default.
 Código de la plantilla:
-&amp;lt;ul&amp;gt; {{ range .Site.Data.tv }} &amp;lt;h1&amp;gt;&amp;lt;li&amp;gt; {{ .name }}&amp;lt;/li&amp;gt;&amp;lt;/h1&amp;gt; {{ range .channels }} &amp;lt;a href=&amp;quot;{{ .web}}&amp;quot; &amp;gt; &amp;lt;img src=&amp;quot;{{.logo}}&amp;quot; alt=&amp;quot;{{ .name }}&amp;quot;&amp;gt; &amp;lt;/a&amp;gt; {{ end }} {{ end }} &amp;lt;/ul&amp;gt;  Una vez que creada la plantilla, vamos a consumirla desde un fichero de markdown.</description>
+&amp;lt;ul&amp;gt; {{ range .Site.Data.tv }} &amp;lt;h1&amp;gt;&amp;lt;li&amp;gt; {{ .name }}&amp;lt;/li&amp;gt;&amp;lt;/h1&amp;gt; {{ range .channels }} &amp;lt;a href=&amp;#34;{{ .web}}&amp;#34; &amp;gt; &amp;lt;img src=&amp;#34;{{.logo}}&amp;#34; alt=&amp;#34;{{ .name }}&amp;#34;&amp;gt; &amp;lt;/a&amp;gt; {{ end }} {{ end }} &amp;lt;/ul&amp;gt; Una vez que creada la plantilla, vamos a consumirla desde un fichero de markdown.</description>
     </item>
     <item>
       <title>Links</title>
@@ -83,7 +84,7 @@ Código de la plantilla:
       <description>Ejercicio 9 Solucionando el problema de los links Hugo por defecto abre los links en la misma página, pero nos interesa que los enlaces externos se abran en otra página.
 Para solucionar esto creamos el archivo render-link.html en la carpeta layouts/_default/_markup/
 Y añadimos el siguiente script:
-&amp;lt;a href=&amp;quot;{{ .Destination | safeURL }}&amp;quot;{{ with .Title}} title=&amp;quot;{{ . }}&amp;quot;{{ end }}{{ if strings.HasPrefix .Destination &amp;quot;http&amp;quot; }} target=&amp;quot;_blank&amp;quot;{{ end }}&amp;gt; {{ .Text }} &amp;lt;/a&amp;gt;  Para que funcione debemos de escribir los links de esta manera:</description>
+&amp;lt;a href=&amp;#34;{{ .Destination | safeURL }}&amp;#34;{{ with .Title}} title=&amp;#34;{{ . }}&amp;#34;{{ end }}{{ if strings.HasPrefix .Destination &amp;#34;http&amp;#34; }} target=&amp;#34;_blank&amp;#34;{{ end }}&amp;gt; {{ .Text }} &amp;lt;/a&amp;gt; Para que funcione debemos de escribir los links de esta manera:</description>
     </item>
   </channel>
 </rss>

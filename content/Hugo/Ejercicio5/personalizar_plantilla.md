@@ -13,18 +13,18 @@ Modifica la plantilla según se ha visto en este tema.
 ###### 1. Cambia el logo.
 
 Para cambiar el logo u otras características de la plantilla modificamos el contenido del archivo correspendiente de la carpeta **layouts/partials** de nuestra plantilla. En este caso modificamos **logo.html**.
-
-    <a id="logo"
-        href="{{ .Site.Params.landingPageURL | default "/" | relLangURL }}"
-        style="
-            color: #3d414d;
-            font-family: 'Novacento Sans Wide', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
-            font-size: 30px;
-            font-weight: bold;
-            margin-top: -2px;
-        ">
-        <img src="https://i.ibb.co/H7GYpgm/hugo-logo.png" alt="Logo de HUGO">Hugo
-    </a>
+```html
+<a id="logo"
+    href="{{ .Site.Params.landingPageURL | default "/" | relLangURL }}"
+    style="
+        color: #3d414d;
+        font-family: 'Novacento Sans Wide', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: -2px;">
+    <img src="https://i.ibb.co/H7GYpgm/hugo-logo.png" alt="Logo de HUGO">Hugo
+</a>
+```
 --- 
 ###### 2. Establece otros colores según consideres.
 

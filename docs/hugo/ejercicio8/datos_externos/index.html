@@ -7,16 +7,16 @@
     <meta name="description" content="">
     
     <title>Datos externos :: My New Hugo Site</title>
-    <link href="/myHugoSite/css/nucleus.css?1637695410" rel="stylesheet">
-    <link href="/myHugoSite/css/fontawesome-all.min.css?1637695410" rel="stylesheet">
-    <link href="/myHugoSite/css/featherlight.min.css?1637695410" rel="stylesheet">
-    <link href="/myHugoSite/css/perfect-scrollbar.min.css?1637695410" rel="stylesheet">
-    <link href="/myHugoSite/css/auto-complete.css?1637695410" rel="stylesheet">
-    <link href="/myHugoSite/css/theme.css?1637695410" rel="stylesheet">
-    <link href="/myHugoSite/css/theme-green.css?1637695410" rel="stylesheet">
-    <link href="/myHugoSite/css/variant.css?1637695410" rel="stylesheet">
-    <link href="/myHugoSite/css/print.css?1637695410" rel="stylesheet" media="print">
-    <script src="/myHugoSite/js/jquery.min.js?1637695410"></script>
+    <link href="/myHugoSite/css/nucleus.css?1637703356" rel="stylesheet">
+    <link href="/myHugoSite/css/fontawesome-all.min.css?1637703356" rel="stylesheet">
+    <link href="/myHugoSite/css/featherlight.min.css?1637703356" rel="stylesheet">
+    <link href="/myHugoSite/css/perfect-scrollbar.min.css?1637703356" rel="stylesheet">
+    <link href="/myHugoSite/css/auto-complete.css?1637703356" rel="stylesheet">
+    <link href="/myHugoSite/css/theme.css?1637703356" rel="stylesheet">
+    <link href="/myHugoSite/css/theme-green.css?1637703356" rel="stylesheet">
+    <link href="/myHugoSite/css/variant.css?1637703356" rel="stylesheet">
+    <link href="/myHugoSite/css/print.css?1637703356" rel="stylesheet" media="print">
+    <script src="/myHugoSite/js/jquery.min.js?1637703356"></script>
     <style>
       :root #header + #content > #left > #rlblock_left{
         display:none !important;
@@ -50,11 +50,11 @@
           <input data-search-input id="search-by" type="search" placeholder="Search...">
           <span data-search-clear=""><i class="fas fa-times"></i></span>
         </div>
-        <script src="/myHugoSite/js/lunr.min.js?1637695410"></script>
-        <script src="/myHugoSite/js/auto-complete.js?1637695410"></script>
+        <script src="/myHugoSite/js/lunr.min.js?1637703356"></script>
+        <script src="/myHugoSite/js/auto-complete.js?1637703356"></script>
         <!-- hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic: -->
         <!-- https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72 -->
-        <script src="/myHugoSite/js/search.js?1637695410"></script>
+        <script src="/myHugoSite/js/search.js?1637703356"></script>
       </div>
       <div id="homelinks">
         <ul>
@@ -135,39 +135,36 @@
 <p>Ubicamos el fichero <strong>tv.json</strong> en la carpeta <strong>data</strong>. El fichero lo obtenemos de <a href="https://github.com/MAlejandroR/staticSite/blob/main/data/tv.json" target="_blank">https://github.com/MAlejandroR/staticSite/blob/main/data/tv.json</a>.</p>
 <p>Creamos una plantilla html <strong>datos_tv.html</strong> y la ubicamos en <strong>themes/relearn/layouts/_default</strong>.</p>
 <p>Código de la plantilla:</p>
-<pre><code>&lt;ul&gt;
-  {{ range  .Site.Data.tv }}
-  &lt;h1&gt;&lt;li&gt;  {{ .name }}&lt;/li&gt;&lt;/h1&gt;
-  {{ range .channels }}
-      &lt;a href=&quot;{{ .web}}&quot; &gt;
-      &lt;img src=&quot;{{.logo}}&quot; alt=&quot;{{ .name }}&quot;&gt;
-      &lt;/a&gt;
-   {{ end }}
-  {{ end }}
-&lt;/ul&gt;
-</code></pre>
-<p>Una vez que creada la plantilla, vamos a consumirla desde un fichero de markdown. Buscamos la plantilla base para incluir los elementos en esta plantilla en la nuestra. <strong>datos_tv.html</strong> quedaría así:</p>
-<pre><code>{{- partial &quot;header.html&quot; . }}
-{{ partial &quot;content.html&quot; . }}
-   &lt;ul&gt;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">ul</span>&gt;
     {{ range  .Site.Data.tv }}
-    &lt;h2&gt;&lt;li&gt;  {{ .name }}&lt;/li&gt;&lt;/h2&gt;
+    &lt;<span style="color:#f92672">h1</span>&gt;&lt;<span style="color:#f92672">li</span>&gt;  {{ .name }}&lt;/<span style="color:#f92672">li</span>&gt;&lt;/<span style="color:#f92672">h1</span>&gt;
     {{ range .channels }}
-    &lt;a href=&quot;{{ .web}}&quot; &gt;
-        &lt;img src=&quot;{{.logo}}&quot; alt=&quot;{{ .name }}&quot;&gt;
-    &lt;/a&gt;
-
+    &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .web}}&#34;</span> &gt;
+    &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{.logo}}&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .name }}&#34;</span>&gt;
+    &lt;/<span style="color:#f92672">a</span>&gt;
     {{ end }}
     {{ end }}
-    &lt;/ul&gt;
-    &lt;footer class=&quot;footline&quot;&gt;
+&lt;/<span style="color:#f92672">ul</span>&gt;
+</code></pre></div><p>Una vez que creada la plantilla, vamos a consumirla desde un fichero de markdown. Buscamos la plantilla base para incluir los elementos en esta plantilla en la nuestra. <strong>datos_tv.html</strong> quedaría así:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{- partial &#34;header.html&#34; . }}
+{{ partial &#34;content.html&#34; . }}
+    &lt;<span style="color:#f92672">ul</span>&gt;
+    {{ range  .Site.Data.tv }}
+    &lt;<span style="color:#f92672">h2</span>&gt;&lt;<span style="color:#f92672">li</span>&gt;  {{ .name }}&lt;/<span style="color:#f92672">li</span>&gt;&lt;/<span style="color:#f92672">h2</span>&gt;
+    {{ range .channels }}
+    &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .web}}&#34;</span> &gt;
+        &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{.logo}}&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .name }}&#34;</span>&gt;
+    &lt;/<span style="color:#f92672">a</span>&gt;
+    {{ end }}
+    {{ end }}
+    &lt;/<span style="color:#f92672">ul</span>&gt;
+    &lt;<span style="color:#f92672">footer</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;footline&#34;</span>&gt;
     {{- with .Params.LastModifierDisplayName }}
-    &lt;i class='fas fa-user'&gt;&lt;/i&gt; &lt;a href=&quot;mailto:{{ $.Params.LastModifierEmail }}&quot;&gt;{{ . }}&lt;/a&gt; {{ with $.Date }} &lt;i class='fas fa-calendar'&gt;&lt;/i&gt; {{ .Format &quot;02/01/2006&quot; }}{{ end }}
+    &lt;<span style="color:#f92672">i</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;fas fa-user&#39;</span>&gt;&lt;/<span style="color:#f92672">i</span>&gt; &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mailto:{{ $.Params.LastModifierEmail }}&#34;</span>&gt;{{ . }}&lt;/<span style="color:#f92672">a</span>&gt; {{ with $.Date }} &lt;<span style="color:#f92672">i</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;fas fa-calendar&#39;</span>&gt;&lt;/<span style="color:#f92672">i</span>&gt; {{ .Format &#34;02/01/2006&#34; }}{{ end }}
     {{- end }}
-    &lt;/footer&gt;
-{{- partial &quot;footer.html&quot; . }}
-</code></pre>
-<p>Ahora le indicamos a nuestra página <strong>datos_externos.md</strong> que use esta plantilla:</p>
+    &lt;/<span style="color:#f92672">footer</span>&gt;
+{{- partial &#34;footer.html&#34; . }}
+</code></pre></div><p>Ahora le indicamos a nuestra página <strong>datos_externos.md</strong> que use esta plantilla:</p>
 <pre><code>+++
 pre = &quot;&lt;b&gt;8. &lt;/b&gt;&quot;
 title = &quot;Datos externos&quot;
@@ -1663,18 +1660,18 @@ layout = &quot;datos_tv&quot;
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/myHugoSite/js/clipboard.min.js?1637695410"></script>
-    <script src="/myHugoSite/js/perfect-scrollbar.min.js?1637695410"></script>
-    <script src="/myHugoSite/js/perfect-scrollbar.jquery.min.js?1637695410"></script>
-    <script src="/myHugoSite/js/jquery.svg.pan.zoom.js?1637695410"></script>
-    <script src="/myHugoSite/js/featherlight.min.js?1637695410"></script>
-    <script src="/myHugoSite/js/modernizr.custom-3.6.0.js?1637695410"></script>
-    <script src="/myHugoSite/js/mermaid.min.js?1637695410"></script>
+    <script src="/myHugoSite/js/clipboard.min.js?1637703356"></script>
+    <script src="/myHugoSite/js/perfect-scrollbar.min.js?1637703356"></script>
+    <script src="/myHugoSite/js/perfect-scrollbar.jquery.min.js?1637703356"></script>
+    <script src="/myHugoSite/js/jquery.svg.pan.zoom.js?1637703356"></script>
+    <script src="/myHugoSite/js/featherlight.min.js?1637703356"></script>
+    <script src="/myHugoSite/js/modernizr.custom-3.6.0.js?1637703356"></script>
+    <script src="/myHugoSite/js/mermaid.min.js?1637703356"></script>
     <script>
       if (typeof mermaid != 'undefined' && typeof mermaid.mermaidAPI != 'undefined') {
         mermaid.mermaidAPI.initialize( Object.assign( { "securityLevel": "antiscript" }, JSON.parse("{ \"startOnLoad\": true }"), { startOnLoad: false } ) );
       }
     </script>
-    <script src="/myHugoSite/js/relearn.js?1637695410"></script>
+    <script src="/myHugoSite/js/relearn.js?1637703356"></script>
   </body>
 </html>

@@ -13,11 +13,11 @@ Hugo por defecto abre los links en la misma página, pero nos interesa que los e
 Para solucionar esto creamos el archivo **render-link.html** en la carpeta **layouts/_default/_markup/**
 
 Y añadimos el siguiente script:
-
-    <a href="{{ .Destination | safeURL }}"{{ with .Title}} title="{{ . }}"{{ end }}{{ if strings.HasPrefix .Destination "http" }} target="_blank"{{ end }}>
-      {{ .Text }}
-    </a>
-
+```html
+<a href="{{ .Destination | safeURL }}"{{ with .Title}} title="{{ . }}"{{ end }}{{ if strings.HasPrefix .Destination "http" }} target="_blank"{{ end }}>
+{{ .Text }}
+</a>
+```
 Para que funcione debemos de escribir los links de esta manera:
 
     [https://www.heroku.com/](https://www.heroku.com/)

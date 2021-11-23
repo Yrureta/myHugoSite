@@ -7,16 +7,16 @@
     <meta name="description" content="">
     
     <title>Links :: My New Hugo Site</title>
-    <link href="/myHugoSite/css/nucleus.css?1637695410" rel="stylesheet">
-    <link href="/myHugoSite/css/fontawesome-all.min.css?1637695410" rel="stylesheet">
-    <link href="/myHugoSite/css/featherlight.min.css?1637695410" rel="stylesheet">
-    <link href="/myHugoSite/css/perfect-scrollbar.min.css?1637695410" rel="stylesheet">
-    <link href="/myHugoSite/css/auto-complete.css?1637695410" rel="stylesheet">
-    <link href="/myHugoSite/css/theme.css?1637695410" rel="stylesheet">
-    <link href="/myHugoSite/css/theme-green.css?1637695410" rel="stylesheet">
-    <link href="/myHugoSite/css/variant.css?1637695410" rel="stylesheet">
-    <link href="/myHugoSite/css/print.css?1637695410" rel="stylesheet" media="print">
-    <script src="/myHugoSite/js/jquery.min.js?1637695410"></script>
+    <link href="/myHugoSite/css/nucleus.css?1637703356" rel="stylesheet">
+    <link href="/myHugoSite/css/fontawesome-all.min.css?1637703356" rel="stylesheet">
+    <link href="/myHugoSite/css/featherlight.min.css?1637703356" rel="stylesheet">
+    <link href="/myHugoSite/css/perfect-scrollbar.min.css?1637703356" rel="stylesheet">
+    <link href="/myHugoSite/css/auto-complete.css?1637703356" rel="stylesheet">
+    <link href="/myHugoSite/css/theme.css?1637703356" rel="stylesheet">
+    <link href="/myHugoSite/css/theme-green.css?1637703356" rel="stylesheet">
+    <link href="/myHugoSite/css/variant.css?1637703356" rel="stylesheet">
+    <link href="/myHugoSite/css/print.css?1637703356" rel="stylesheet" media="print">
+    <script src="/myHugoSite/js/jquery.min.js?1637703356"></script>
     <style>
       :root #header + #content > #left > #rlblock_left{
         display:none !important;
@@ -50,11 +50,11 @@
           <input data-search-input id="search-by" type="search" placeholder="Search...">
           <span data-search-clear=""><i class="fas fa-times"></i></span>
         </div>
-        <script src="/myHugoSite/js/lunr.min.js?1637695410"></script>
-        <script src="/myHugoSite/js/auto-complete.js?1637695410"></script>
+        <script src="/myHugoSite/js/lunr.min.js?1637703356"></script>
+        <script src="/myHugoSite/js/auto-complete.js?1637703356"></script>
         <!-- hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic: -->
         <!-- https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72 -->
-        <script src="/myHugoSite/js/search.js?1637695410"></script>
+        <script src="/myHugoSite/js/search.js?1637703356"></script>
       </div>
       <div id="homelinks">
         <ul>
@@ -136,11 +136,10 @@
 <p>Hugo por defecto abre los links en la misma página, pero nos interesa que los enlaces externos se abran en otra página.</p>
 <p>Para solucionar esto creamos el archivo <strong>render-link.html</strong> en la carpeta <strong>layouts/_default/_markup/</strong></p>
 <p>Y añadimos el siguiente script:</p>
-<pre><code>&lt;a href=&quot;{{ .Destination | safeURL }}&quot;{{ with .Title}} title=&quot;{{ . }}&quot;{{ end }}{{ if strings.HasPrefix .Destination &quot;http&quot; }} target=&quot;_blank&quot;{{ end }}&gt;
-  {{ .Text }}
-&lt;/a&gt;
-</code></pre>
-<p>Para que funcione debemos de escribir los links de esta manera:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Destination | safeURL }}&#34;</span><span style="color:#960050;background-color:#1e0010">{{</span> <span style="color:#a6e22e">with</span> <span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">Title</span><span style="color:#960050;background-color:#1e0010">}}</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ . }}&#34;</span><span style="color:#960050;background-color:#1e0010">{{</span> <span style="color:#a6e22e">end</span> <span style="color:#960050;background-color:#1e0010">}}{{</span> <span style="color:#a6e22e">if</span> <span style="color:#a6e22e">strings</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">HasPrefix</span> <span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">Destination</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">http</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">}}</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span><span style="color:#960050;background-color:#1e0010">{{</span> <span style="color:#a6e22e">end</span> <span style="color:#960050;background-color:#1e0010">}}</span>&gt;
+{{ .Text }}
+&lt;/<span style="color:#f92672">a</span>&gt;
+</code></pre></div><p>Para que funcione debemos de escribir los links de esta manera:</p>
 <pre><code>[https://www.heroku.com/](https://www.heroku.com/)
 </code></pre>
 <p><a href="https://www.heroku.com/" target="_blank">https://www.heroku.com/</a></p>
@@ -161,18 +160,18 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/myHugoSite/js/clipboard.min.js?1637695410"></script>
-    <script src="/myHugoSite/js/perfect-scrollbar.min.js?1637695410"></script>
-    <script src="/myHugoSite/js/perfect-scrollbar.jquery.min.js?1637695410"></script>
-    <script src="/myHugoSite/js/jquery.svg.pan.zoom.js?1637695410"></script>
-    <script src="/myHugoSite/js/featherlight.min.js?1637695410"></script>
-    <script src="/myHugoSite/js/modernizr.custom-3.6.0.js?1637695410"></script>
-    <script src="/myHugoSite/js/mermaid.min.js?1637695410"></script>
+    <script src="/myHugoSite/js/clipboard.min.js?1637703356"></script>
+    <script src="/myHugoSite/js/perfect-scrollbar.min.js?1637703356"></script>
+    <script src="/myHugoSite/js/perfect-scrollbar.jquery.min.js?1637703356"></script>
+    <script src="/myHugoSite/js/jquery.svg.pan.zoom.js?1637703356"></script>
+    <script src="/myHugoSite/js/featherlight.min.js?1637703356"></script>
+    <script src="/myHugoSite/js/modernizr.custom-3.6.0.js?1637703356"></script>
+    <script src="/myHugoSite/js/mermaid.min.js?1637703356"></script>
     <script>
       if (typeof mermaid != 'undefined' && typeof mermaid.mermaidAPI != 'undefined') {
         mermaid.mermaidAPI.initialize( Object.assign( { "securityLevel": "antiscript" }, JSON.parse("{ \"startOnLoad\": true }"), { startOnLoad: false } ) );
       }
     </script>
-    <script src="/myHugoSite/js/relearn.js?1637695410"></script>
+    <script src="/myHugoSite/js/relearn.js?1637703356"></script>
   </body>
 </html>

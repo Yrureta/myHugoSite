@@ -23,9 +23,9 @@ Una vez instalado tenemos que añadir en el archivo de configuración **config.t
 ###### 2. Ejecuta el comando de hugo para abrir un puerto en local.
 
 Para abrir un puerto en local escribimos en la consola:
-
-    hugo server &
-
+´´´
+hugo server &
+´´´
 Nos abre el puerto **35171**.
 
 ---

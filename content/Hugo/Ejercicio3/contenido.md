@@ -20,18 +20,18 @@ Para crear las secciones y ficheros **_index.md** utilizamos por ejemplo:
     hugo new --kind chapter Hugo/Ejercicio1/instalacion.md
 
 Seguidamente utilizamos **markdown** para añadir el contenido:
+```markdown
+###### 1. Crea un sitio nuevo con el nombre que quieras.    
 
-    ###### 1. Crea un sitio nuevo con el nombre que quieras.
+Para crear un nuevo sitio con Hugo escribimos en la consola:
 
-    Para crear un nuevo sitio con Hugo escribimos en la consola:
+    hugo new site myHugoSite
 
-        hugo new site myHugoSite
+---
+###### 2. Entra en el directorio creado y observa las diferentes carpetas que tienes.
 
-    ---
-    ###### 2. Entra en el directorio creado y observa las diferentes carpetas que tienes.
-
-    ![image1](https://i.ibb.co/93XZjgH/dwesc-001.png)
-
+![image1](https://i.ibb.co/93XZjgH/dwesc-001.png)
+```
 Y luego se visualizará de esta manera en el navegador:
 
   ![image4](https://i.ibb.co/zb9pqVw/dwes-004.png?classes=border)
