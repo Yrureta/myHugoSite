@@ -2,3 +2,32 @@ baseURL = "https://Yrureta/myHugoSite"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme =['relearn']
+
+[params]
+  themeVariant = "green"
+
+[[menu.shortcuts]]
+name="<i class='fas fa-circle'></i>   American Music Club"
+identified=""
+url="https://open.spotify.com/album/7ADzHyUaZJvF930EffNDHU?si=VTjqhD-0TdufMC_OuZE00Q" 
+target="_blank" 
+weight=1
+
+[[menu.shortcuts]]
+name="<i class='fas fa-circle'></i>   Deerhunter"
+identified=""
+url="https://open.spotify.com/album/3a3Yp0PRguSTH3dBOeWRyZ?si=Mk4kQa8cRSGLHNmEkvdAxA" 
+target="_blank" 
+weight=2
+
+[[menu.shortcuts]]
+name="<i class='fas fa-circle'></i>   Beach House"
+identified=""
+url="https://open.spotify.com/album/7ejB3MHdDNcY3GzRsQRAHs?si=re-UeiyYS2a6ml7hMG9sJQ" 
+weight=3
+
+[[menu.shortcuts]]
+name="<i class='fas fa-circle'></i>   Vetiver"
+identified=""
+url="https://open.spotify.com/album/6kbbOgKxIWVt49DGihtm8Q?si=apqDEQgmSqKsYN1RbwuadQ" 
+weight=4
