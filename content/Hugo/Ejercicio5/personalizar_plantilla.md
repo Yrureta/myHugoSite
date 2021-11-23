@@ -65,13 +65,10 @@ Añadimos en el fichero de configuración **config.toml** el código siguiente:
     url="https://open.spotify.com/album/6kbbOgKxIWVt49DGihtm8Q?si=apqDEQgmSqKsYN1RbwuadQ" 
     weight=4
 
-Para establecer un título para el menú tenemos que editar los ficheros de idioma. Par editar el fichero de español editaremos **es.toml**, para inglés **en.toml**, etc.
+Para establecer un título para el menú tenemos que editar los ficheros de idioma. Par editar el fichero de español editaremos **es.toml**.
 
     [Shortcuts-Title]
-    other = "Algo de música"
-
-    [Shortcuts-Title]
-    other = "Some music"
+    other = "Música"
 
 --- 
 ###### 4. Modifica el footer de la página.
@@ -83,7 +80,7 @@ Modificamos el fichero **footer.html**.
     <!-- end chapter-->
     {{- end }}
     </main>
-    DAWS - Práctica 1 - Miguel Yrureta
+    DWES - Práctica 1 - Miguel Yrureta
     <!-- #body-inner -->
 
 --- 
