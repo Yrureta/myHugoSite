@@ -10,7 +10,7 @@ weight = 3
 --- 
 ###### 1. Crea la estructura de tu sitio web.
 
-![image2](https://i.ibb.co/p4Cj0qB/dwesc-003.png)
+![image2](https://i.ibb.co/p4Cj0qB/dwesc-003.png?width=35pc)
 --- 
 ###### 2. Completa los ficheros con contenido.
 
@@ -34,7 +34,7 @@ Seguidamente utilizamos **markdown** para añadir el contenido:
 
 Y luego se visualizará de esta manera en el navegador:
 
-  ![image4](https://i.ibb.co/zb9pqVw/dwes-004.png)
+  ![image4](https://i.ibb.co/zb9pqVw/dwes-004.png?classes=border)
 
 ---
 ###### 3. Ahora reordena todo usando el frontmatter.
@@ -44,6 +44,6 @@ Los ficheros generados tienen en su cabecera una serie de valores por defecto, p
 ---
 ###### 3. Comprueba en el servidor como se ha actualizado tu sitio web.
 
-![image2](https://i.ibb.co/Z6sKwDX/DWEC-002.png)
+![image2](https://i.ibb.co/Z6sKwDX/DWEC-002.png?classes=border)
 
 ---

@@ -7,6 +7,7 @@ weight = 3
 
 ### Puzle
 
-# Some Chapter title
+##### Resuelve el puzle
 
-Lorem Ipsum.
+
+

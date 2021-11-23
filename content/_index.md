@@ -1,5 +1,5 @@
 +++
-chapter = true
+chapter = false
 title = "DWEC - Práctica 1"
 weight = 3
 +++

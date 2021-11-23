@@ -6,5 +6,14 @@
     <description>Recent content in Puzle on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://Yrureta/myHugoSite/puzle/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Puzle</title>
+      <link>https://Yrureta/myHugoSite/puzle/puzle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Yrureta/myHugoSite/puzle/puzle/</guid>
+      <description>Resuelve el puzle A continuación te nombro varias herramientas/tecnologías para el desarrollo web. Agrega un nuevo fichero md en tu sitio web explicándolo. Usa shortcode para darle un aspecto más visual.
+Se trata de que las agrupes y hagas un par de frases de qué es cada cosa. Usa tus propias palabras y aporta la url de su página oficial.
+   Herramienta Descripción URL     Polyfills     Babel Polyfill para hacer compatibles las versiones de Javascript en navegadores modernos y antiguos.</description>
+    </item>
   </channel>
 </rss>

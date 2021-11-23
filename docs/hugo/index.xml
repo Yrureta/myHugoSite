@@ -20,9 +20,9 @@ hugo new site myHugoSite   2. Entra en el directorio creado y observa las difere
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://Yrureta/myHugoSite/hugo/ejercicio2/themes/</guid>
       <description>Ejercicio 2 Themes o layout base  1. Instala el tema relearn. Para instalar el tema en Hugo escribimos en la consola:
-git init git submodule add https://github.com/McShelby/hugo-theme-relearn.git ./themes/relearn  Una vez instalado tenemos que escribir en el archivo de configuración config.toml:
+git init git submodule add https://github.com/McShelby/hugo-theme-relearn.git ./themes/relearn  Una vez instalado tenemos que añadir en el archivo de configuración config.toml:
 theme =[&#39;relearn&#39;]   2. Ejecuta el comando de hugo para abrir un puerto en local. Para abrir un puerto en local escribimos en la consola:
-hugo server &amp;amp;   3.</description>
+hugo server &amp;amp;  Nos abre el puerto 35171.</description>
     </item>
     <item>
       <title>Contenido</title>
