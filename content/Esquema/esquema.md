@@ -4,11 +4,11 @@ title = "Proceso de carga de un recurso web"
 weight = 1
 +++
 
-Partimos de la url: https://www.reasonstudios.com/en/reason/instruments/kong
+Partimos de la url: [https://www.reasonstudios.com/en/reason/instruments/kong](https://www.reasonstudios.com/en/reason/instruments/kong)
 
 | Protocolo | Maquina | Recurso |
 | ----------- | ----------- | --- |
-| http:   | www.reasonstudios.com |  en/reason/instruments/kong |
+| http:   | [www.reasonstudios.com](https://www.reasonstudios.com) |  en/reason/instruments/kong |
 
 Esquema:
 

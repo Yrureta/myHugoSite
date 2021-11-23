@@ -21,7 +21,7 @@ Accede a la información de de shortcode de la plantilla de relearn e incluye en
 
 --- 
 ###### 3. Acortar un texto con leer mas….
-{{% expand "Haz click aquí!" "true" %}}
+{{% expand "Haz click aquí!" "false" %}}
 Hiciste click!
 {{% /expand %}}
 

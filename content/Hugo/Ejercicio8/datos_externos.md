@@ -9,7 +9,7 @@ layout = "datos_tv"
 
 ##### Datos externos
 
-Ubicamos el fichero **tv.json** en la carpeta **data**. El fichero lo obtenemos de https://github.com/MAlejandroR/staticSite/blob/main/data/tv.json.
+Ubicamos el fichero **tv.json** en la carpeta **data**. El fichero lo obtenemos de [https://github.com/MAlejandroR/staticSite/blob/main/data/tv.json](https://github.com/MAlejandroR/staticSite/blob/main/data/tv.json).
 
 Creamos una plantilla html **datos_tv.html** y la ubicamos en **themes/relearn/layouts/_default**.
 
