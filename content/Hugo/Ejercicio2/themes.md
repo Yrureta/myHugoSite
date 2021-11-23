@@ -15,7 +15,7 @@ Para instalar el tema en Hugo escribimos en la consola:
     git init
     git submodule add https://github.com/McShelby/hugo-theme-relearn.git ./themes/relearn
 
-Una vez instalado tenemos que escribir en el archivo de configuración config.toml:
+Una vez instalado tenemos que escribir en el archivo de configuración **config.toml**:
 
     theme =['relearn']
     

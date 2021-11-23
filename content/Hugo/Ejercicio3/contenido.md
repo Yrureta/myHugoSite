@@ -14,12 +14,12 @@ weight = 3
 --- 
 ###### 2. Completa los ficheros con contenido.
 
-Para crear las secciones y ficheros _index.md utilizamos por ejemplo:
+Para crear las secciones y ficheros **_index.md** utilizamos por ejemplo:
 
     hugo new --kind chapter Hugo/_index.md
     hugo new --kind chapter Hugo/Ejercicio1/instalacion.md
 
-Seguídamente utilizamos markdown para añadir el contenido:
+Seguidamente utilizamos **markdown** para añadir el contenido:
 
     ###### 1. Crea un sitio nuevo con el nombre que quieras.
 
