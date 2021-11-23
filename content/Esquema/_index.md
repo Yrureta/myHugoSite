@@ -7,6 +7,4 @@ weight = 2
 
 ### Esquema
 
-# Some Chapter title
-
-Lorem Ipsum.
+# Proceso de carga de un recurso web
